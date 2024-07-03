@@ -14,7 +14,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
 
   return (
     <div
-      className={`transform ${navOpenStyle} w-[100%] pl-8 transition-all duration-500 fixed top-0 left-0 z-[200] h-[100vh] right-0 bottom-0 bg-[#000]`}
+      className={`transform ${navOpenStyle} w-[100%] pl-8 transition-all duration-500 fixed top-0 left-0 z-[200] h-[100vh] right-0 bottom-0 bg-[#091e30]`}
     >
       <Image
         src="menu.svg"
@@ -24,7 +24,10 @@ const MobileNav = ({ nav, closeNav }: Props) => {
         className="inline-block cursor-pointer w-[2rem] h-[2rem] absolute top-[2rem] text-white z-[202] right-[2rem]"
         onClick={closeNav}
       />
-      <ul className="relative z-[201] space-y-10 flex flex-col items-start h-[100%] ">
+      <ul
+        
+        className="relative z-[201] space-y-10 flex flex-col items-start h-[100%] "
+      >
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
